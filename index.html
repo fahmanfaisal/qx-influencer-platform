@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QX Influencer Platform</title>
+    <!-- We link to the BUILT css file, not the src file -->
+    <link href="./build/main.css" rel="stylesheet">
+
+    <!-- Custom Auth CSS -->
+    <link href="./src/auth.css" rel="stylesheet">
+</head>
+
+<body class="bg-site-bg">
+
+    <div class="bg-site-bg min-h-screen p-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 min-h-[calc(100vh-64px)]">
+
+            <!-- LEFT IMAGE / CONTENT -->
+            <div class="relative rounded-2xl overflow-hidden p-8 flex flex-col justify-between bg-cover bg-center"
+                style="background-image: url('public/images/qx-login-img.webp')">
+
+                <!-- TOP BAR -->
+                <div class="flex items-start justify-between">
+                    <a href="#">
+
+                    </a>
+                    <a href="#"
+                        class="flex items-center gap-2 text-white font-inter text-[16px] font-medium leading-[150%]">
+                        <!-- Replace with actual SVG or icon as needed -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                        Back to website
+                    </a>
+                </div>
+
+                <!-- BOTTOM CONTENT -->
+                <div class="flex flex-col gap-4 mr-2">
+                    <h2 class="font-sora text-white text-display-m-bold tracking-[-0.24px]">
+                        QX Influencer Platform
+                    </h2>
+
+                    <p class="font-inter text-white text-body-regular opacity-90">
+                        Collaborate with top influencers to amplify your brand's reach and impact.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- RIGHT Login / Register FORM -->
+            <div class="flex items-center justify-center">
+                <div class="qx-auth-card w-full max-w-[498px]">
+                    <div class="qx-login-form flex flex-col gap-6">
+                        <!-- Heading -->
+                        <div class="qx-auth-header">
+                            <h1 class="qx-auth-title">
+                                Welcome back
+                            </h1>
+
+                            <p class="qx-auth-subtitle">
+                                Sign in to access your qx account and manage your professional development.
+                            </p>
+                        </div>
+
+                        <!-- CUSTOM LOGIN FORM -->
+                        <form method="post" class="qx-auth-form qx-login-form ">
+
+                            <!-- EMAIL -->
+                            <div class="qx-field">
+                                <label>
+                                    Email
+                                </label>
+                                <div class="qx-input">
+                                    <span class="border-r border-dark-accent-50 pr-3">
+                                        <!-- Email icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2">
+                                            <path
+                                                d="M3 8.5v7A2.5 2.5 0 0 0 5.5 18h13A2.5 2.5 0 0 0 21 15.5v-7A2.5 2.5 0 0 0 18.5 6h-13A2.5 2.5 0 0 0 3 8.5z">
+                                            </path>
+                                            <path d="M21 8l-9 6-9-6"></path>
+                                        </svg>
+                                    </span>
+                                    <input type="email" name="qx_email" required autocomplete="username"
+                                        placeholder="you@example.com" />
+                                </div>
+                            </div>
+
+                            <!-- PASSWORD -->
+                            <div class="qx-field mt-4">
+                                <label>
+                                    Password
+                                </label>
+                                <div class="qx-input">
+                                    <span class="border-r border-dark-accent-50 pr-3">
+                                        <!-- Key icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 2a2 2 0 0 0-2.83 0L9 11.17V14h2.83L21 4.83A2 2 0 0 0 21 2z">
+                                            </path>
+                                            <circle cx="6" cy="18" r="3"></circle>
+                                        </svg>
+                                    </span>
+                                    <input type="password" name="qx_password" class="qx-password-input" required
+                                        autocomplete="current-password" placeholder="Enter your password" />
+                                    <span class="toggle-password" aria-pressed="false" role="button" tabindex="0">
+                                        <span class="icon-eye-open" style="display:inline-block;">
+                                            <!-- Eye open -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </span>
+                                        <span class="icon-eye-closed" style="display:none;">
+                                            <!-- Eye closed -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2">
+                                                <path
+                                                    d="M17.94 17.94A10.06 10.06 0 0 1 12 19c-7 0-11-7-11-7a20.89 20.89 0 0 1 5.06-6.06">
+                                                </path>
+                                                <path d="M1 1l22 22"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- META -->
+                            <div class="qx-auth-meta-row">
+                                <label class="qx-remember text-body-small text-dark-accent-500 font-inter">
+                                    <input type="checkbox" name="rememberme">
+                                    Remember me
+                                </label>
+
+                                <a class="qx-forgot text-body-small text-dark-accent-500 font-inter" href="#forgot">
+                                    Forgot password?
+                                </a>
+                            </div>
+
+                            <span class="text-body-small text-dark-accent-500 font-inter">
+                                By signing in to our service you agree to our <a href="/privacy-policy/"
+                                    class="text-button-scondary cursor-pointer">Privacy Policy</a>
+                            </span>
+
+                            <!-- SUBMIT -->
+                            <button type="submit" class="qx-login-btn" data-login-btn>
+                                Login
+                            </button>
+
+                        </form>
+
+                        <!-- REGISTER -->
+                        <div class="qx-register-link flex flex-row gap-1 justify-center items-center mt-[-12px]">
+                            <span class="text-body-regular text-dark-accent-500 mt-[2px]">
+                                New to qx Service?
+                            </span>
+                            <a class="text-button-primary text-dark-accent-500 get-register" href="#register">
+                                Register
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="qx-register-form flex flex-col gap-6">
+                        <!-- Heading -->
+                        <div class="qx-auth-header">
+                            <h1 class="qx-auth-title">
+                                Create Your Account
+                            </h1>
+
+                            <p class="qx-auth-subtitle">
+                                Create an account to manage your qx accreditation and professional development records
+                                securely.
+                            </p>
+                        </div>
+
+                        <!-- CUSTOM REGISTER FORM -->
+                        <form method="post" class="qx-auth-form qx-register-form">
+
+                            <!-- FULL NAME -->
+                            <div class="qx-field">
+                                <label>
+                                    Full Name
+                                </label>
+                                <div class="qx-input">
+                                    <span class="border-r border-dark-accent-50 pr-3">
+                                        <!-- Avatar icon placeholder -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <circle cx="12" cy="8" r="4" />
+                                            <path d="M4 20c0-4 8-4 8-4s8 0 8 4" />
+                                        </svg>
+                                    </span>
+                                    <input type="text" name="full_name" required placeholder="Enter your name">
+                                </div>
+                            </div>
+
+                            <!-- EMAIL -->
+                            <div class="qx-field mt-4">
+                                <label>
+                                    Email
+                                </label>
+                                <div class="qx-input">
+                                    <span class="border-r border-dark-accent-50 pr-3">
+                                        <!-- Email icon placeholder -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2">
+                                            <path
+                                                d="M3 8.5v7A2.5 2.5 0 0 0 5.5 18h13A2.5 2.5 0 0 0 21 15.5v-7A2.5 2.5 0 0 0 18.5 6h-13A2.5 2.5 0 0 0 3 8.5z">
+                                            </path>
+                                            <path d="M21 8l-9 6-9-6"></path>
+                                        </svg>
+                                    </span>
+                                    <input type="email" name="user_email" required placeholder="Enter your email">
+                                </div>
+                            </div>
+
+                            <!-- PASSWORD -->
+                            <div class="qx-field mt-4">
+                                <label>
+                                    Password
+                                </label>
+                                <div class="qx-input">
+                                    <span class="border-r border-dark-accent-50 pr-3">
+                                        <!-- Key icon placeholder -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 2a2 2 0 0 0-2.83 0L9 11.17V14h2.83L21 4.83A2 2 0 0 0 21 2z">
+                                            </path>
+                                            <circle cx="6" cy="18" r="3"></circle>
+                                        </svg>
+                                    </span>
+                                    <input type="password" class="qx-password-input" name="user_password" required
+                                        placeholder="Enter your password">
+                                    <span class="toggle-password" aria-pressed="false">
+                                        <span class="icon-eye-open">
+                                            <!-- Eye open icon placeholder -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </span>
+                                        <span class="icon-eye-closed">
+                                            <!-- Eye closed icon placeholder -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2">
+                                                <path
+                                                    d="M17.94 17.94A10.06 10.06 0 0 1 12 19c-7 0-11-7-11-7a20.89 20.89 0 0 1 5.06-6.06">
+                                                </path>
+                                                <path d="M1 1l22 22"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- CONFIRM PASSWORD -->
+                            <div class="qx-field mt-4">
+                                <label>
+                                    Re-enter Password
+                                </label>
+                                <div class="qx-input">
+                                    <span class="border-r border-dark-accent-50 pr-3">
+                                        <!-- Key icon placeholder -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 2a2 2 0 0 0-2.83 0L9 11.17V14h2.83L21 4.83A2 2 0 0 0 21 2z">
+                                            </path>
+                                            <circle cx="6" cy="18" r="3"></circle>
+                                        </svg>
+                                    </span>
+                                    <input type="password" class="qx-password-input" name="user_password_confirm"
+                                        required placeholder="Re-enter password">
+                                    <span class="toggle-password" aria-pressed="false">
+                                        <span class="icon-eye-open">
+                                            <!-- Eye open icon placeholder -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </span>
+                                        <span class="icon-eye-closed">
+                                            <!-- Eye closed icon placeholder -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2">
+                                                <path
+                                                    d="M17.94 17.94A10.06 10.06 0 0 1 12 19c-7 0-11-7-11-7a20.89 20.89 0 0 1 5.06-6.06">
+                                                </path>
+                                                <path d="M1 1l22 22"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- PHONE -->
+                            <div class="qx-field mt-4">
+                                <label>
+                                    Phone
+                                </label>
+                                <div class="qx-input">
+                                    <span class="border-r border-dark-accent-50 pr-3">
+                                        <!-- Phone icon placeholder -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path
+                                                d="M22 16.92v3a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3.08 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 22 16.92z" />
+                                        </svg>
+                                    </span>
+                                    <input type="tel" name="phone_number" required placeholder="+44348739589***">
+                                </div>
+                            </div>
+
+                            <!-- META -->
+                            <div class="qx-auth-meta-row">
+                                <label class="qx-remember text-body-small text-dark-accent-500 font-inter">
+                                    <input type="checkbox" name="rememberme">
+                                    I want to receive important updates about qx Services
+                                </label>
+                            </div>
+
+                            <span class="text-body-small text-dark-accent-500 font-inter">
+                                By signing in to our service you agree to our <a href="/privacy-policy/"
+                                    class="text-button-scondary cursor-pointer">Privacy Policy</a>
+                            </span>
+
+                            <!-- Create Account -->
+                            <button type="submit" class="qx-login-btn mt-6" data-register-btn>
+                                Create Account
+                            </button>
+
+                            <!-- login -->
+                            <div class="qx-register-link flex flex-row gap-1 justify-center items-center mt-2">
+                                <span class="text-body-regular text-dark-accent-500 mt-[2px]">
+                                    Already Registered?
+                                </span>
+                                <a class="text-button-primary text-dark-accent-500 get-login" href="#login">
+                                    Login
+                                </a>
+                            </div>
+
+                            <!-- Nonce field removed for static HTML -->
+                        </form>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Script linking -->
+    <script src="src/main.js"></script>
+</body>
+
+</html>

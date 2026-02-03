@@ -1,0 +1,193 @@
+/* ===========================
+   CARD
+=========================== */
+.qx-auth-card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #e7ebee;
+  border-radius: 16px;
+  width: 100%;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+.qx-auth-card .qx-auth-header {
+  text-align: center;
+}
+
+.qx-auth-card .qx-auth-title {
+  font-family: Sora;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -0.08px;
+  color: #0f3657;
+}
+
+.qx-auth-card .qx-auth-subtitle {
+  margin-top: 8px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  color: #0f3657;
+}
+
+
+/* ===========================
+   FIELDS
+=========================== */
+.qx-auth-card .qx-auth-form .um-field {
+  margin-bottom: 20px !important;
+}
+
+/* labels */
+.qx-auth-card .qx-field{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.qx-auth-card .qx-auth-form .qx-field label {
+  color: #0f3657;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+/* ===========================
+   INPUT WRAPPER
+=========================== */
+.qx-auth-card .qx-auth-form .qx-input  {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  height: 48px !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+  border: 1px solid #E7EBEE !important;
+  background: #fff !important;
+  transition: border 0.1s ease;
+}
+.qx-auth-card .qx-auth-form .qx-input:focus-within {
+  border: 2px solid #B0DDDF !important;
+}
+
+.qx-auth-card .qx-auth-form .qx-input input {
+  flex: 1 !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+  color: #0F3657;
+  height: 100% !important;
+
+}
+.qx-auth-card .qx-auth-form .qx-input input:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+/* icon */
+.qx-auth-card .qx-auth-form .qx-input-icon {
+  display: flex;
+  align-items: center;
+}
+
+/* placeholder */
+.qx-auth-card .qx-auth-form input::placeholder {
+  color: #b5c1cb;
+}
+
+
+/* ===========================
+   LOGIN BUTTON
+=========================== */
+.qx-auth-card .qx-auth-form .qx-login-btn {
+  width: 100% !important;
+  height: 48px !important;
+  margin-top: 12px !important;
+  border-radius: 40px !important;
+  background: #019297 !important;
+  border: none !important;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.16px;
+  color: #fff !important;
+}
+.qx-auth-card .qx-auth-form .qx-login-btn:hover {
+  background: #017d7f !important;
+}
+
+.qx-auth-card .qx-auth-form .um-field {
+    padding: 0px !important; 
+}
+
+/* Remember + Forgot row */
+.qx-auth-card .qx-auth-form .qx-auth-meta-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0px;
+
+}
+
+/* Checkbox fix */
+.qx-auth-card .qx-auth-form .qx-remember input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    border-radius: 6px !important;
+}
+
+.qx-auth-card .qx-login-btn.is-loading {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+.qx-auth-card .qx-login-btn.is-loading:hover {
+    background: #019297 !important;
+}
+
+/* Password toggle icon */
+.qx-auth-card .toggle-password {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.qx-auth-card .toggle-password .icon-eye-open {
+    display: none;
+}
+.qx-auth-card .toggle-password .icon-eye-closed {
+    display: inline-flex;
+}
+.qx-auth-card .toggle-password.is-visible .icon-eye-open {
+    display: inline-flex;
+}
+.qx-auth-card .toggle-password.is-visible .icon-eye-closed {
+    display: none;
+}
+
+
+/* Auth form toggle */
+.qx-auth-card .qx-login-form,
+.qx-auth-card .qx-register-form {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.qx-auth-card .qx-auth-hidden {
+  display: none !important;
+}
+.qx-auth-card .qx-auth-fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+}
